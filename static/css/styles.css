@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fontColor:rgb(31, 31, 86);
+}
+body{
+    background-color: rgb(220, 229, 236);
+    /*
+    background-image:url("/static/images/natural.jpg") ;
+    background-size: cover;
+    */
+    color: var(--fontColor);
+}
+.box{
+    width: 500px;
+    height: 550px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-top: 20px;
+    box-shadow: 3px 3px rgb(137, 137, 137);
+    animation: transitionIn 1s;
+    overflow: hidden;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1{
+    color: rgb(47, 47, 47);
+    margin: 10px 0px 40px 30px;
+    text-align: left;
+    font-family:Franklin Gothic Medium;
+}
+.login span{
+    display: block;
+}
+input{
+    width: 330px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(93, 93, 255);
+}
+span{
+    font-size: 23px;
+    text-align: left;
+    margin-left: 80px;
+}
+button{
+    display: block;
+    width: 130px;
+    height: 40px;
+    margin-left: 65%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid rgb(93, 93, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-size: 21px;
+    float: right;
+    margin-right: 50px;
+    color: rgb(93, 93, 255);
+}
+.part1{
+    transition: opacity 1s;
+}
+.part2{
+    margin-top: 10px;
+    transition: opacity 2s;
+    display: none;
+}
+.sexo{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.sexo div{
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.male{
+    margin-right: 60px;
+}
+.female span{
+    margin-left: 100px;
+}
+.sexo div input{
+    position:absolute;
+    margin-left: 120px;
+    margin-top: 8px;
+    width: 14px;
+    height: 14px;
+}
+
+select{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -140px;
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+    border: 2px solid rgb(93, 93, 255);
+}
+
+.buttons{
+    margin-top: 50px;
+    width: 100%;
+    height:100px;
+}
+.buttons button{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid rgb(93, 93, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.send {
+    float: right;
+    margin-right: 50px;
+}
+.buttons .back{
+    float: left;
+    margin-left: 70px;
+}
+#error{
+    display: none;
+    color: red;
+}
+#success{
+    display: none;
+    color: green;
+}

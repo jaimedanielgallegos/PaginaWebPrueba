@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body>
+    <h1>Datos de la cuenta</h1>
+    <div class="box">
+        <form onsubmit="return false" class="login" >
+            <div class="part1">
+                <span>Nombre de usuario</span>
+                <input type="text" name="" id="username">
+                <span>Email</span>
+                <input id="email">
+                <span>Contraseña</span>
+                <input type="password" id="password">
+                <span>Repetir Contraseña</span>
+                <input type="password" id="repeatPassword">
+                <button class="next" onclick="next()">Siguiente</button>
+            </div>
+            <div class="part2" id="part2">
+                <span id="sexText">Sexo:</span>
+                <div class="sexo">
+                    <div class="male">
+                        <input type="radio" name="sex" value="male">
+                        <span>Hombre</span>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="sex" value="female">
+                        <span>Mujer</span>
+                    </div>
+                </div>
+                <span>Estado de residencia</span>
+                <select id="edo">
+                    <option value="">Seleccione el estado</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Coahuila">Coahuila</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                </select>
+                <span>Edad</span>
+                <input type="number" id="age">
+                <div class="buttons">
+                    <button onclick="back()" class="back">Regresar</button>
+                    <button onclick="register()" class="send">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <span class="accountTxt">¿Ya cuentas con una?</span><a href='/'>Iniciar Sesion<a>
+        </div>
+    </div>
+</body>
+<script src="../static/js/javascript.js"></script>
+</html>
